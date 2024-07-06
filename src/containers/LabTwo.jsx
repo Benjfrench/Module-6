@@ -1,11 +1,14 @@
-import { GreetingsHoC } from "../components/Greetings"
+import React from 'react';
+import { BigCats } from "../components/BigCats"
+import { originalData } from '../data/catsData';
 
 
 
 export const LabTwo = () => {
-    return (
-        <GreetingsHoC name={"Ben"}>
-            <p>I want to welcome you to my website.</p>
-        </GreetingsHoC>
+    return (<div>
+        <div>
+            <BigCats data={originalData}/>
+        </div>
+    </div>
     )
 }
